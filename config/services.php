@@ -31,4 +31,20 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'geoapify' => [
+        'key' => env('GEOAPIFY_API_KEY'),
+        'url' => env('GEOAPIFY_API_URL'),
+    ],
+
+    'foursquare' => [
+        'key' => env('FOURSQUARE_API_KEY'),
+        'url' => env('FOURSQUARE_API_URL'),
+    ],
+
+    'open_weather' => [
+        'key' =>  env('OPEN_WEATHER_API_KEY'),
+        'url' =>  env('OPEN_WEATHER_API_URL'),
+        'icon_url' => env('OPEN_WEATHER_API_ICON_URL')
+    ],
+
 ];
