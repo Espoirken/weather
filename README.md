@@ -64,3 +64,42 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Installation for Laravel
+- Clone this repository (https://github.com/Espoirken/weather) with **git clone** 
+- Copy **.env.example** file to **.env** and edit your database credentials
+- Run **composer install**
+- Run **php artisan key:generate**
+- Run **php artisan migrate**
+- Run **php artisan passport:install**
+- Create a token using the **Client ID** and the **Client secret** via **Postman** 
+- Visit the documentation here: https://laravel.com/docs/9.x/passport#retrieving-tokens
+
+
+## Installation for Vue
+- Clone this front-end repository(https://github.com/Espoirken/weather-vue) with **git clone**
+- Go inside the folder
+- Copy **.env.example** file to **.env** 
+- Put your generated token into the **VITE_API_TOKEN** and your Laravel API URL into the **VITE_API_URL**
+- Run **npm install**
+- Run **npm run dev**
+
+
+## References
+
+https://apidocs.geoapify.com/docs/geocoding/forward-geocoding/#about
+
+https://developer.foursquare.com/reference/place-search
+
+https://openweathermap.org/forecast5
+
+
+## Why this code implementation is the best?
+- Followed SOLID Principles and OOP
+- Followed PSR coding standards
+- Separated Controllers, Services, and Resources for cleaner code
+- Utilized Laravel Contextual Binding on Interface for Dependency Injection
+- Used Laravel Passport OAuth2 and client middleware for API security
+- Implemented Foursquare, Geoapify, and Open weather API
+
